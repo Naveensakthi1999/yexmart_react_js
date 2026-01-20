@@ -1,0 +1,117 @@
+export const adsPriceFormData = [
+  {
+    type: 'TEXT_FIELD',
+    label: 'Package Name',
+    validationType: 'general',
+    attributeType: 'text',
+    id: 'adspackagename',
+    name: 'adspackagename',
+    placeholder: 'Enter Package Name (e.g., Basic, Premium, Gold)',
+    required: true,
+  },
+  {
+    type: 'TEXT_FIELD',
+    label: 'Package Price',
+    validationType: 'number',
+    attributeType: 'number',
+    id: 'price',
+    name: 'price',
+    placeholder: 'Enter Package Price',
+    required: true,
+    prefix: '$',
+  },
+  {
+    type: 'SELECT_FIELD',
+    label: 'Billing Cycle',
+    validationType: 'general',
+    id: 'billingcycle',
+    name: 'billingcycle',
+    placeholder: 'Select Billing Cycle',
+    required: true,
+    options: [
+      {
+        label: 'Monthly',
+        value: 'monthly',
+      },
+      {
+        label: 'Quarterly',
+        value: 'quarterly',
+      },
+      {
+        label: 'Yearly',
+        value: 'yearly',
+      },
+      {
+        label: 'One-Time',
+        value: 'one_time',
+      },
+    ],
+  },
+  // {
+  //   type: 'SELECT_FIELD',
+  //   label: 'Expiry Duration (Days)',
+  //   validationType: 'number',
+  //   id: 'expiry_days',
+  //   name: 'expiry_days',
+  //   required: true,
+  //   options: [
+  //     {
+  //       label: 'Monthly',
+  //       value: '30',
+  //     },
+  //     {
+  //       label: 'Quarterly',
+  //       value: '90',
+  //     },
+  //     {
+  //       label: 'Yearly',
+  //       value: '365',
+  //     },
+  //     {
+  //       label: 'One-Time',
+  //       value: 'one_time',
+  //     },
+  //   ],
+  //   min: 1,
+  //   max: 365,
+  // },
+  {
+    type: 'SELECT_FIELD',
+    label: 'Package Status',
+    validationType: 'general',
+    id: 'status',
+    name: 'status',
+    required: true,
+    options: [
+      {
+        label: 'Active',
+        value: 'active',
+      },
+      {
+        label: 'Inactive',
+        value: 'inactive',
+      },
+    ],
+    default: 'active',
+  },
+  {
+    type: 'TEXTAREA_FIELD',
+    label: 'Package Features',
+    validationType: 'general',
+    id: 'content',
+    name: 'content',
+    placeholder: 'Enter package content (one per line)',
+    required: false,
+    rows: 4,
+  },
+  // {
+  //   type: 'TEXT_FIELD',
+  //   label: 'Max Ads Limit',
+  //   validationType: 'number',
+  //   attributeType: 'number',
+  //   id: 'max_ads',
+  //   name: 'max_ads',
+  //   placeholder: 'Enter maximum ads allowed',
+  //   required: true,
+  // },
+];

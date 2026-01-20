@@ -1,0 +1,70 @@
+export const staffFormData = [
+  {
+    type: 'TEXT_FIELD',
+    label: 'Full Name',
+    validationType: 'general',
+    attributeType: 'text',
+    id: 'fullname',
+    name: 'fullname',
+    placeholder: 'Enter full name',
+    required: true,
+  },
+  {
+    type: 'TEXT_FIELD',
+    label: 'Email',
+    validationType: 'email',
+    attributeType: 'email',
+    id: 'email',
+    name: 'email',
+    placeholder: 'Enter email',
+    required: true,
+  },
+  {
+    type: 'TEXT_FIELD',
+    label: 'Mobile',
+    validationType: 'mobile',
+    attributeType: 'text',
+    id: 'mobile',
+    name: 'mobile',
+    placeholder: 'Enter mobile number',
+    required: true,
+  },
+  {
+    type: 'SELECT_FIELD',
+    label: 'Status',
+    validationType: 'general',
+    id: 'status',
+    name: 'status',
+    required: true,
+    options: [
+      { label: 'Active', value: 'active' },
+      { label: 'Inactive', value: 'inactive' },
+    ],
+  },
+  {
+    type: 'SELECT_FIELD',
+    label: 'Role',
+    validationType: 'general',
+    id: 'role',
+    name: 'role',
+    required: true,
+    options: [
+      { label: 'Staff', value: 3 },
+      { label: 'Admin', value: 4 },
+      { label: 'Super Admin', value: 5 },
+    ],
+  },
+
+  // ---- Credential fields ----
+
+  {
+    type: 'PRIVATE_FIELD',
+    label: 'Password',
+    validationType: 'password',
+    attributeType: 'password',
+    id: 'password',
+    name: 'password',
+    placeholder: 'Enter password',
+    required: false,
+  },
+];
